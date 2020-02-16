@@ -1,7 +1,7 @@
 package com.boot.springboot.web;
 
 import com.boot.springboot.web.dto.PostsResponseDto;
-import com.boot.springboot.web.service.posts.PostsService;
+import com.boot.springboot.service.posts.PostsService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

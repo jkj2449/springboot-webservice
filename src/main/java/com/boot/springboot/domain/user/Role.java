@@ -1,4 +1,4 @@
-package com.boot.springboot.web.domain.user;
+package com.boot.springboot.domain.user;
 
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;

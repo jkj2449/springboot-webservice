@@ -1,4 +1,4 @@
-package com.boot.springboot.web.domain.user;
+package com.boot.springboot.domain.user;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 
