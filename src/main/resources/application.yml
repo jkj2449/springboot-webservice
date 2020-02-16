@@ -4,6 +4,9 @@ spring:
       charset: UTF-8
       enabled: true
 
+  session:
+    store-type: jdbc
+
   profiles:
     include: oauth
 
