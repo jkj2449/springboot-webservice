@@ -3,6 +3,10 @@ spring:
     encoding:
       charset: UTF-8
       enabled: true
+
+  profiles:
+    include: oauth
+
   jpa:
     show_sql: true
     properties:
