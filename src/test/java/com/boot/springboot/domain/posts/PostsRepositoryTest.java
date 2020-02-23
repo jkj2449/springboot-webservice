@@ -20,7 +20,7 @@ public class PostsRepositoryTest {
 
     @After
     public void cleanUp() {
-        postsRepository.deleteAll();
+        //postsRepository.deleteAll();
     }
 
     @Test
@@ -39,6 +39,8 @@ public class PostsRepositoryTest {
         Posts posts = postsList.get(0);
         assertThat(posts.getTitle()).isEqualTo(title);
         assertThat(posts.getContent()).isEqualTo(content);
+
+        postsRepository.delete(posts);
     }
 
     @Test
@@ -58,5 +60,7 @@ public class PostsRepositoryTest {
 
         assertThat(posts.getCreatedDate()).isAfter(now);
         assertThat(posts.getModifiedDate()).isAfter(now);
+
+        postsRepository.delete(posts);
     }
 }
